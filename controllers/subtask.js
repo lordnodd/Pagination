@@ -42,40 +42,6 @@ module.exports = {
         }
       }
     });
-    // queryAsync("SELECT user_id,count(*) as numRows FROM tb_user")
-    //   .then(function (results) {
-    //     numRows = results[0].numRows;
-    //     numPages = Math.ceil(numRows / numPerPage);
-    //     console.log("number of pages:", numPages);
-    //   })
-    //   .then(() =>
-    //     queryAsync(`SELECT * FROM tb_user LIMIT ${startIndex}, ${endIndex}`)
-    //   )
-    //   .then(function (results) {
-    //     var responsePayload = {
-    //       results: results,
-    //     };
-    //     if (page < numPages) {
-    //       responsePayload.pagination = {
-    //         current: page,
-    //         perPage: numPerPage,
-    //         previous: page > 0 ? page - 1 : undefined,
-    //         next: page < numPages - 1 ? page + 1 : undefined,
-    //       };
-    //     } else
-    //       responsePayload.pagination = {
-    //         err:
-    //           "queried page " +
-    //           page +
-    //           " is >= to maximum page number " +
-    //           numPages,
-    //       };
-    //     res.json(responsePayload);
-    //   })
-    //   .catch(function (err) {
-    //     console.error(err);
-    //     res.json({ err: err });
-    //   });
   },
 
   someid: (req, res) => {
